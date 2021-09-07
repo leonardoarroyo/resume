@@ -16,7 +16,7 @@ jobs:
         shell: bash
         run: echo ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true | sudo debconf-set-selections
       - name: Install Times New Roman font
-        run: sudo apt install ttf-mscorefonts-installer
+        run: sudo apt-get install -y ttf-mscorefonts-installer
       - name: Install Luatex
         run: sudo apt-get install -y texlive texlive-luatex texlive-latex-base texlive-latex-extra
       - name: Compile LaTeX document
