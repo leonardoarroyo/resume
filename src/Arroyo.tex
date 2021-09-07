@@ -1,0 +1,119 @@
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
+
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{Arroyo}
+
+% For mathematical symbols
+\usepackage{amsmath}
+
+\newenvironment{tightcenter}{%
+  \setlength\topsep{0pt}
+  \setlength\parskip{4pt}
+  \begin{center}
+}{%
+  \end{center}
+}
+
+% Set applicant's personal data for header
+\name{Leonardo A. Arroyo}
+\address{São Paulo, SP \linebreak Brazil}
+\contacts{+5511997146299 \linebreak work@leonardoarroyo.com}
+
+\begin{document}
+
+	% Print the header
+	\makeheader
+
+	\begin{cvsection}{About me}
+		\begin{cvsubsection}{}{}{}	
+            Hello there! My name is Leonardo Arroyo, I am a 25 year old software engineer with 9 years of professional experience. I currently live in São Paulo, Brazil.
+			I'm currently considering all international remote job opportunities, but it would be a plus to work with any combination of these: high-load distributed systems, cryptocurrency, functional programming and open-source.
+		\end{cvsubsection}
+      \end{cvsection}
+	
+	% Print the content
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Software Engineer}{Zé Delivery | AB InBev}{2020 -- present}
+            Currently working on:
+			\begin{itemize}
+                \item Moving legacy monolith code to microservices
+                \item Applying GitOps workflow for cloud infrastructure management
+                \item PoC development, load testing and data-oriented approach for new services development
+                \item Reviewing code-challenge applications for potential hirees and technichal interviewing
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Lead Backend Engineer}{Atados}{2015 -- 2020}	
+            Responsible for developing, maintaing and improving Atados web site portal and infrastructure, along with several websites for projects inside Atados Hub.
+			\begin{itemize}
+                \item Rewrote legacy backend for increased extensibility, whitelabeling and multi-tenancy
+                \item Enabled backend to host over 8 whitelabel volunteering platform for customers
+                \item Hired and onboarded new team members
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Fullstack Developer}{Interaktiv}{2014 -- 2015}		
+            Responsible for full-stack development and system administration for a couple of projects.
+			\begin{itemize}
+                \item Developed backend, admin and customer facing frontend for a local marketplace
+                \item Improved workflow practices at the team(git versioning, code review, build tools, deployment workflow)
+                \item Maintained legacy ERP projects
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Fullstack Developer}{MontarSite}{2012 -- 2014}
+			\begin{itemize}
+                \item Created CMS backed hotsites and institutional websites
+                \item Developed a simple real estate broker platform for a local customer
+			\end{itemize} \end{cvsubsection}
+
+		\begin{cvsubsection}{Tinkerer}{Home}{2006 -- 2012}
+            Not a job per se, but an important moment in my trajectory, this is where my passion for computing started. I've played with a wide range of technlogies, from VB6 to Lua to PHP and developed my curiosity for computers.
+            During these years, I’ve had the pleasure of learning lots of different ideas, concepts and paradigms which would eventually become the starting point of my career in software development.
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{Languages}{}	
+			\begin{tightcenter}
+				TypeScript • Python • Elixir • Haskell
+			\end{tightcenter}
+		\end{cvsubsection}
+		\begin{cvsubsection}{}{Libraries \& Frameworks}{}	
+			\begin{tightcenter}
+				Django • DRF • Graphene • Express • Apollo • Hasura • Ramda • React
+			\end{tightcenter}
+		\end{cvsubsection}
+		\begin{cvsubsection}{}{Storage / Database / Messaging}{}	
+			\begin{tightcenter}
+				MySQL • PostgreSQL • Aurora • ElasticSearch • RabbitMQ • SNS • SQS • S3 
+			\end{tightcenter}
+		\end{cvsubsection}
+		\begin{cvsubsection}{}{Cloud / IaaC / CI/CD}{}	
+			\begin{tightcenter}
+				AWS • GCP • Terraform • Pulumi • TravisCI • GitHub Actions
+			\end{tightcenter}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+\end{document}
